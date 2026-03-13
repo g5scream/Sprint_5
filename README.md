@@ -1,7 +1,5 @@
 # Sprint_5
 
-=======
-
 UI‑тестирование сервиса [Stellar Burgers](https://stellarburgers.education-services.ru) в браузере Google Chrome.
 
 ## Стек технологий
@@ -60,4 +58,3 @@ UI‑тестирование сервиса [Stellar Burgers](https://stellarbu
 * «Начинки» — тест `test_click_fillings_scroll_to_fillings`.
 
 **Запуск:** `pytest -v tests/test_constructor_section.py`
->>>>>>> c51e098 (Update the project name to README)

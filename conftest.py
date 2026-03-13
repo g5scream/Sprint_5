@@ -1,5 +1,5 @@
 import pytest
-from typing import Any, Generator
+from typing import Generator
 from selenium import webdriver
 from selenium.webdriver.chrome.webdriver import WebDriver
 from selenium.webdriver.support import expected_conditions as EC
@@ -9,7 +9,7 @@ from locators import LoginPage, MainPage
 
 
 @pytest.fixture
-def browser() -> Generator[WebDriver, Any, None]:
+def browser() -> Generator[WebDriver, None, None]:
     browser = webdriver.Chrome()
     browser.get(Urls.main_page)
     yield browser
