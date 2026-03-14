@@ -27,6 +27,4 @@ class TestRegistrationPage:
         browser.find_element(*RegPage.EMAIL_INPUT).send_keys(user.login)
         browser.find_element(*RegPage.PASSWORD_INPUT).send_keys(password)
         browser.find_element(*RegPage.REGISTRATE_BUTTON).click()
-        WebDriverWait(browser, 5).until(EC.presence_of_element_located(RegPage.INPUT_ERROR_TEXT))
-        error_message = browser.find_element(*RegPage.INPUT_ERROR_TEXT)
-        assert error_message.text == 'Некорректный пароль'
+        assert WebDriverWait(browser, 5).until(EC.visibility_of_element_located(RegPage.INPUT_ERROR_TEXT)).is_displayed()

@@ -6,7 +6,7 @@ class RegPage: # Register
     PASSWORD_INPUT = (By.XPATH, './/input[@type="password"]')                       # для поля "password" в форме регистрации
     REGISTRATE_BUTTON = (By.XPATH, './/button[text()="Зарегистрироваться"]')        # для кнопки "Зарегистрироваться"
     LOGIN_TEXT_WITH_HREF = (By.CLASS_NAME, 'Auth_link__1fOlj')                      # для "Войти"
-    INPUT_ERROR_TEXT = (By.XPATH, './/p[contains(@class, "input__error")]')         # для Ошибки ввода в форме регистрации
+    INPUT_ERROR_TEXT = (By.XPATH, '//p[contains(text(), "Некорректный пароль")]')   # для Ошибки ввода в форме регистрации
 
 class MainPage: # Home
     PROFILE_LINK_TEXT = (By.XPATH, './/p[text()="Личный Кабинет"]')                 # для перехода по ссылке "Личный кабинет"
